@@ -93,23 +93,6 @@ crate-type = ["cdylib", "rlib"]
 name = "loxone-mcp-server"
 path = "src/main.rs"
 
-[[bin]]
-name = "loxone-mcp-setup"
-path = "src/bin/setup.rs"
-
-[[bin]]
-name = "loxone-mcp-auth"
-path = "src/bin/loxone-mcp-auth.rs"
-
-[[bin]]
-name = "loxone-cli"
-path = "src/bin/loxone-cli.rs"
-
-# Development utilities
-[[bin]]
-name = "loxone-mcp-test-endpoints"
-path = "src/bin/test_endpoints.rs"
-
 [dependencies]
 # MCP Framework (from crates.io) - Upgraded to 0.17.0 with macros support
 # Note: cli, cli-derive, monitoring dropped (stuck at 0.14.0, incompatible)
