@@ -219,8 +219,12 @@ socket2 = { version = "0.5", optional = true }
 dirs = "6.0"
 
 [features]
-default = ["crypto-openssl", "websocket", "infisical", "discovery", "http-server", "influxdb", "framework-migration", "turso"]
-
+default = [
+  "websocket",
+  "infisical",
+  "discovery",
+  "http-server"
+]
 # Framework features (now default) - using 0.17.0 crates with macros
 framework-migration = [
     "pulseengine-mcp-protocol",
