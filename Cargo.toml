@@ -73,7 +73,6 @@ readme = "README.md"
 keywords = ["loxone", "home-automation", "smart-home", "iot", "mcp"]
 categories = ["api-bindings", "embedded", "network-programming", "asynchronous"]
 exclude = ["/.github", "/target", "/tests/fixtures", "/integration_tests"]
-build = "build.rs"
 
 [package.metadata.docs.rs]
 all-features = true
