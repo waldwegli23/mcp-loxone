@@ -24,9 +24,8 @@ RUN mkdir src && \
     echo "fn main() {}" > src/lib.rs
 
 # Build dependencies (this layer will be cached)
-RUN cargo build --release && \
+RUN cargo build --release --bin loxone-mcp-server && \
     rm -rf src
-
 # Copy actual source code
 COPY src ./src
 COPY build.rs ./
